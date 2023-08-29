@@ -24,3 +24,5 @@ Route::get('/product', function () {
 Route::get('/news', [NewsController::class, 'index']);
 
 Route::get('/news/create', [NewsController::class, 'create']);
+
+Route::post('/news/store', [NewsController::class, 'store']);
