@@ -1,17 +1,11 @@
-@include('layouts.sidebar')
-@include('layouts.topbar')
+<x-admin>
 
-<!-- Begin Page Content -->
-<div class="container-fluid">
-
-  <!-- Page Heading -->
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <h1 class="h3 mb-0 text-gray-800">News</h1>
   </div>
 
-  <button type="button" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></button>
+  <a href="/news/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
 
-  <!-- DataTales Example -->
   <div class="card shadow mb-4">
     <div class="card-header py-3">
       <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
@@ -44,10 +38,4 @@
     </div>
   </div>
 
-</div>
-<!-- /.container-fluid -->
-
-</div>
-<!-- End of Main Content -->
-
-@include('layouts.footer')
+</x-admin>
