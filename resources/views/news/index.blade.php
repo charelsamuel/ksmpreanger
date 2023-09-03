@@ -8,30 +8,28 @@
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+      <h6 class="m-0 font-weight-bold text-primary">List</h6>
     </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-bordered" id="myTable" class="display">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Preview</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
+            @foreach ($news as $item)
             <tr>
-              <td>Tiger Nixon</td>
-              <td>System Architect</td>
-              <td>Edinburgh</td>
-              <td>61</td>
-              <td>2011/04/25</td>
-              <td>$320,800</td>
+              <td>{{ $item->id }}</td>
+              <td>{{ $item->title }}</td>
+              <td>{{ $item->preview }}</td>
+              <td class="text-center"><a href="/news/{{$item->id}}"><i class="bi-eye"></i></a></td>
             </tr>
+            @endforeach
           </tbody>
         </table>
       </div>

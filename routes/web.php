@@ -26,3 +26,11 @@ Route::get('/news', [NewsController::class, 'index']);
 Route::get('/news/create', [NewsController::class, 'create']);
 
 Route::post('/news/store', [NewsController::class, 'store']);
+
+Route::get('/news/update-form/{id}', [NewsController::class, 'updateForm']);
+
+Route::post('/news/update', [NewsController::class, 'update']);
+
+Route::post('/news/delete', [NewsController::class, 'delete']);
+
+Route::get('/news/{id}', [NewsController::class, 'view']);

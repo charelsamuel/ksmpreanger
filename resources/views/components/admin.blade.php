@@ -19,7 +19,8 @@
   <link href="/css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="/css/richtext.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -330,11 +331,15 @@
 
     <!-- Page level custom scripts -->
     <script src="{{asset('js/demo/chart-area-demo.js')}}"></script>
+    <script src="{{asset('js/jquery.richtext.min.js')}}"></script>
+
     <script src="{{asset('js/demo/chart-pie-demo.js')}}"></script>
 
+    @stack('scripts')
     <script type="text/javascript">
       $(document).ready(function() {
         $('#myTable').DataTable();
+        $('.content').richText();
       });
     </script>
 
