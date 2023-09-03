@@ -13,24 +13,22 @@ use App\Http\Controllers\NewsController;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard.index');
-});
-
 Route::get('/product', function () {
     return view('product.index');
 });
 
-Route::get('/news', [NewsController::class, 'index']);
+Route::get('/news', [NewsController::class, 'index'])->middleware(['auth']);
 
-Route::get('/news/create', [NewsController::class, 'create']);
+Route::get('/news/create', [NewsController::class, 'create'])->middleware(['auth']);
 
-Route::post('/news/store', [NewsController::class, 'store']);
+Route::post('/news/store', [NewsController::class, 'store'])->middleware(['auth']);
 
-Route::get('/news/update-form/{id}', [NewsController::class, 'updateForm']);
+Route::get('/news/update-form/{id}', [NewsController::class, 'updateForm'])->middleware(['auth']);
 
-Route::post('/news/update', [NewsController::class, 'update']);
+Route::post('/news/update', [NewsController::class, 'update'])->middleware(['auth']);
 
-Route::post('/news/delete', [NewsController::class, 'delete']);
+Route::post('/news/delete', [NewsController::class, 'delete'])->middleware(['auth']);
 
-Route::get('/news/{id}', [NewsController::class, 'view']);
+Route::get('/news/{id}', [NewsController::class, 'view'])->middleware(['auth']);
+
+require __DIR__ . '/auth.php';
