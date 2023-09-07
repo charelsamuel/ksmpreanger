@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,5 +31,19 @@ Route::post('/news/update', [NewsController::class, 'update'])->middleware(['aut
 Route::post('/news/delete', [NewsController::class, 'delete'])->middleware(['auth']);
 
 Route::get('/news/{id}', [NewsController::class, 'view'])->middleware(['auth']);
+
+Route::get('/product', [ProductController::class, 'index'])->middleware(['auth']);
+
+Route::get('/product/create', [ProductController::class, 'create'])->middleware(['auth']);
+
+Route::post('/product/store', [ProductController::class, 'store'])->middleware(['auth']);
+
+Route::get('/product/update-form/{id}', [ProductController::class, 'updateForm'])->middleware(['auth']);
+
+Route::post('/product/update', [ProductController::class, 'update'])->middleware(['auth']);
+
+Route::post('/product/delete', [ProductController::class, 'delete'])->middleware(['auth']);
+
+Route::get('/product/{id}', [ProductController::class, 'view'])->middleware(['auth']);
 
 require __DIR__ . '/auth.php';

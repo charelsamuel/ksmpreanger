@@ -1,6 +1,4 @@
-@include('layouts.sidebar')
-@include('layouts.topbar')
-
+<x-admin>
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -9,7 +7,7 @@
       <h1 class="h3 mb-0 text-gray-800">Product</h1>
   </div>
 
-<button type="button" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></button>
+  <a href="/product/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
 
 <!-- DataTales Example -->
     <div class="card shadow mb-4">
@@ -21,23 +19,25 @@
                 <table class="table table-bordered" id="myTable" class="display">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <th>Id</th>
+                            <th>Nama Produk</th>
+                            <th>Deskripsi</th>
+                            <th>Harga</th>
+                            <th>Link</th>
+                            <th>Image Preview</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($product as $product)
                         <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
+                            <td>{{ $product->id }}</td>
+                            <td>{{ $product->name }}</td>
+                            <td>{{ $product->description }}</td>
+                            <td>{{ $product->price }}</td>
+                            <td>{{ $product->link }}</td>
+                            <td class="text-center"><a href="/product/{{$product->id}}"><i class="bi-eye"></i></a></td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -49,5 +49,4 @@
 
 </div>
 <!-- End of Main Content -->
-
-@include('layouts.footer')
+</x-admin>
