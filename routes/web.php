@@ -14,6 +14,8 @@ use App\Http\Controllers\ProductController;
 |
 */
 
+Route::get('/', [NewsController::class, 'index'])->middleware(['auth']);
+
 Route::get('/product', function () {
     return view('product.index');
 });

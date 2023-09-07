@@ -34,12 +34,12 @@
           </tr>
           <tr>
             <th>Image Preview</th>
-            <td><img src="/images/product/{{$product->id}}_preview.jpg" class="img-fluid" alt="{{$product->id}}_preview"></td>
-        </tr>
-        <tr>
+            <td><img src="/images/product/{{$product->id}}_preview.{{$product->imageExtension}}" class="img-fluid" alt="{{$product->id}}_preview"></td>
+          </tr>
+          <tr>
             <th>Image Content</th>
-            <td><img src="/images/product/{{$product->id}}_content.jpg" class="img-fluid" alt="{{$product->id}}_content"></td>
-        </tr>
+            <td><img src="/images/product/{{$product->id}}_content.{{$product->imageExtension}}" class="img-fluid" alt="{{$product->id}}_content"></td>
+          </tr>
         </table>
       </div>
     </div>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class RemoveProductsImageColumn extends Migration
+class RemoveImageFromProduct extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,8 @@ class RemoveProductsImageColumn extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->dropColumn('image');
+            $table->dropColumn('img_preview');
+            $table->dropColumn('img_content');
         });
     }
 
@@ -25,8 +26,9 @@ class RemoveProductsImageColumn extends Migration
      */
     public function down()
     {
-        Schema::table('products', function (Blueprint $table) {
-            $table->string('image');
+        Schema::table('news', function (Blueprint $table) {
+            $table->string('img_preview');
+            $table->string('img_content');
         });
     }
 }
