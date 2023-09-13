@@ -20,6 +20,10 @@ Route::get('/product', function () {
     return view('product.index');
 });
 
+Route::get('/index', function () {
+    return view('index');
+});
+
 Route::get('/news', [NewsController::class, 'index'])->middleware(['auth']);
 
 Route::get('/news/create', [NewsController::class, 'create'])->middleware(['auth']);
