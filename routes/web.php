@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
@@ -20,9 +21,7 @@ Route::get('/product', function () {
     return view('product.index');
 });
 
-Route::get('/index', function () {
-    return view('index');
-});
+Route::get('/index', [IndexController::class, 'index']);
 
 Route::get('/news', [NewsController::class, 'index'])->middleware(['auth']);
 
