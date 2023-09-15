@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\IndexController;
+use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
@@ -21,7 +21,21 @@ Route::get('/product', function () {
     return view('product.index');
 });
 
-Route::get('/index', [IndexController::class, 'index']);
+Route::get('/home', [homeController::class, 'home']);
+
+Route::get('/about', [homeController::class, 'about']);
+
+Route::get('/gallery', [homeController::class, 'gallery']);
+
+Route::get('/products', [homeController::class, 'products']);
+
+Route::get('/where', [homeController::class, 'where']);
+
+Route::get('/testimonials', [homeController::class, 'testimonials']);
+
+Route::get('/blog', [homeController::class, 'blog']);
+
+Route::get('/contacts', [homeController::class, 'contacts']);
 
 Route::get('/news', [NewsController::class, 'index'])->middleware(['auth']);
 

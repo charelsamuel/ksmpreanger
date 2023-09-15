@@ -7,7 +7,7 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <title>Title</title>
+  <title>ksmpreanger</title>
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:300,400,700,800" rel="stylesheet">
@@ -27,8 +27,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <a href="index.html" class="main-logo"><img src="images/main-logo.png" alt=""></a>
-          <a href="index.html" class="small-logo"><img src="images/small-logo.png" alt=""></a>
+          <a href="/home" class="main-logo"><img src="images/main-logo.png" alt=""></a>
+          <a href="/home" class="small-logo"><img src="images/small-logo.png" alt=""></a>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#coffee-menu" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -48,44 +48,39 @@
             </div>
             <div class="col-lg-8 col-md-12">
               <ul class="main-menu nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="/home">Home</a></li>
                 <li class="parent">
                   <a href="#">About</a>
                   <ul class="sub-menu">
-                    <li><a href="about.html">About us</a></li>
+                    <li><a href="/about">About us</a></li>
                     <li class="parent">
-                      <a href="#">Gallery</a>
-                      <ul class="third-level">
+                      <a href="/gallery">Gallery</a>
+                      <!-- <ul class="third-level">
                         <li><a href="gallery-2.html">Gallery 2 columns</a></li>
                         <li><a href="gallery.html">Gallery 3 columns</a></li>
                         <li><a href="gallery-4.html">Gallery 4 columns</a></li>
-                      </ul>
+                      </ul> -->
                     </li>
-                    <li><a href="coming-soon-full.html">Maintance Mode</a></li>
-                    <li><a href="404.html">Error Page</a></li>
+                    <!-- <li><a href="coming-soon-full.html">Maintance Mode</a></li>
+                    <li><a href="404.html">Error Page</a></li> -->
                   </ul>
                 </li>
-                <li class="parent">
-                  <a href="shop.html">products</a>
-                  <ul class="sub-menu">
-                    <li><a href="product.html">Single item</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                  </ul>
+                <li>
+                  <a href="/products">products</a>
                 </li>
-                <li><a href="where.html">where to buy</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li class="parent">
-                  <a href="blog-list.html">blog</a>
-                  <ul class="sub-menu">
+                <li><a href="/where">where to buy</a></li>
+                <li><a href="/testimonials">Testimonials</a></li>
+                <li>
+                  <a href="/blog">blog</a>
+                  <!-- <ul class="sub-menu">
                     <li><a href="blog-post.html">Single Blog</a></li>
                     <li><a href="typography.html">Typography</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="/contacts">Contacts</a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-12">
+            <!-- <div class="col-lg-2 col-md-12">
               <div class="top-right">
                 <a href="cart.html" class="cart">
                   <span class="name">Cart</span>
@@ -97,7 +92,7 @@
                   <a href="#" class="fa fa-search search" aria-hidden="true"></a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </nav>
       </div>
@@ -112,7 +107,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="top-title"><span>Worldwide</span> network</div>
-            <div class="big-title">Coffee market</div>
+            <div class="big-title">Mekarwangi Coffee</div>
             <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget<br> magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
             <a href="#" class="btn btn-default">READ MORE</a>
           </div>
@@ -299,13 +294,13 @@
           <h2>Where to buy</h2>
         </div>
         <div class="col-md-12">
-          <ul class="nav nav-tabs" role="tablist">
+          <!-- <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#usa" aria-controls="usa" role="tab" data-toggle="tab">USA</a></li>
             <li role="presentation"><a href="#germany" aria-controls="germany" role="tab" data-toggle="tab">Germany</a></li>
             <li role="presentation"><a href="#france" aria-controls="france" role="tab" data-toggle="tab">France</a></li>
             <li role="presentation"><a href="#italy" aria-controls="italy" role="tab" data-toggle="tab">Italy</a></li>
             <li role="presentation"><a href="#portugal" aria-controls="portugal" role="tab" data-toggle="tab">Portugal</a></li>
-          </ul>
+          </ul> -->
           <div class="tab-content">
             <!-- TabPanel -->
             <div role="tabpanel" class="tab-pane fade in active" id="usa">
@@ -804,7 +799,7 @@
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="footer-about">
-              <div class="title">About Mr.Coffee</div>
+              <div class="title">About Mekarwangi Coffee</div>
               <p>Sed sagittis sodales lobortis. Curabitur in eleifend<br> turpis, id vehicula odio. Donec pulvinar tellus<br> eget magna aliquet ultricies. </p>
             </div>
           </div>
@@ -832,7 +827,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div class="copyrights"><a href="#">Just-themes</a> 2017 &copy; All Rights reserved <a href="#">Terms of Use</a></div>
+            <div class="copyrights"><a href="#">ksmpreanger</a> 2023 &copy; All Rights reserved <a href="#">Terms of Use</a></div>
           </div>
         </div>
       </div>

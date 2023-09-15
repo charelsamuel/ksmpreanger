@@ -248,8 +248,8 @@ textarea { padding: 10px 22px 10px 22px; background: #f5f2eb; border:1px solid #
 .where-buy .nav-tabs > li:hover a { background: none; color: #ba9e64; }
 .where-buy .nav-tabs > li > a { padding:0; font-size: 18px; font-weight: 800; color: #2c1910; border: dashed #2c1910; border-width: 0 0 1px 0; }
 .where-buy .nav-tabs > li.active > a, .where-buy .nav-tabs > li.active > a:hover, .where-buy .nav-tabs > li.active > a:focus { color: #ba9e64; background: none; border:none; }
-.buy-item { padding: 35px 0 36px 0; }
-.buy-item .icon { width: 40px; float: left; }
+.buy-item { padding: 35px 0 36px 0; margin-top: 50px;}
+.buy-item .icon { float: left;}
 .buy-item .icon i { font-size: 36px; color: #ba9e64; }
 .buy-item .info { padding: 0 0 0 40px; }
 .buy-item .info address { padding-top: 2px; font-size: 14px; font-weight: bold; color: #2c1910; line-height: 24px; }
