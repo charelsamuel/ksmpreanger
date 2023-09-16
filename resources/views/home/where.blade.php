@@ -88,7 +88,7 @@
 											<li><a href="typography.html">Typography</a></li>
 										</ul> -->
 									</li>
-									<li><a href="/">Contacts</a></li>
+									<li><a href="/contacts">Contacts</a></li>
 								</ul>
 							</div>
 							<!-- <div class="col-lg-2 col-md-12">

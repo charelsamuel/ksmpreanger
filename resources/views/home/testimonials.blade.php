@@ -6,7 +6,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <link rel="icon" type="image/png" href="images/favicon.png">
-<title>Title</title>
+<title>ksmpreanger</title>
 
 <!-- FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:300,400,700,800" rel="stylesheet">
@@ -85,8 +85,8 @@
 										<a href="/blog">blog</a>
 										<!-- <ul class="sub-menu">
 											<li><a href="blog-post.html">Single Blog</a></li>
-											<li><a href="typography.html">Typography</a></li> -->
-										</ul>
+											<li><a href="typography.html">Typography</a></li>
+										</ul> -->
 									</li>
 									<li><a href="/contacts">Contacts</a></li>
 								</ul>
@@ -147,7 +147,7 @@
 							<i class="fa fa-quote-left"></i>
 						</div>
 			    		<p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-			    		<div class="img-wrap"><img src="images/review-ava.jpg" alt=""></div>
+			    		<div class="img-wrap"></div>
 			    		<div class="name">Leona Richards</div>
 			    		<div class="date">1 year ago</div>
 			    	</div>
@@ -156,7 +156,7 @@
 							<i class="fa fa-quote-left"></i>
 						</div>
 			    		<p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-			    		<div class="img-wrap"><img src="images/review-ava.jpg" alt=""></div>
+			    		<div class="img-wrap"></div>
 			    		<div class="name">Leona Richards</div>
 			    		<div class="date">1 year ago</div>
 			    	</div>
@@ -165,7 +165,7 @@
 							<i class="fa fa-quote-left"></i>
 						</div>
 			    		<p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-			    		<div class="img-wrap"><img src="images/review-ava.jpg" alt=""></div>
+			    		<div class="img-wrap"></div>
 			    		<div class="name">Leona Richards</div>
 			    		<div class="date">1 year ago</div>
 			    	</div>
@@ -174,7 +174,7 @@
 							<i class="fa fa-quote-left"></i>
 						</div>
 			    		<p class="text">Duis vel vestibulum ipsum. Mauris scelerisque, quam vitae scelerisque tempus, turpis est dapibus libero, sit amet euismod ante ante vitae ante. Praesent vitae aliquet leo, in sagittis leo. Fusce vel ullamcorper elit. Aliquam feugiat accumsan est, sit amet efficitur lacus ullamcorper nec. Nulla ultrices nunc id felis sodales molestie vel eget lorem. Morbi vel metus sem. Nulla facilisi. Integer vel elementum augue. Sed semper volutpat massa, eget tincidunt odio fringilla in. Maecenas porta finibus accumsan. Nam luctus semper purus. Mauris a metus et dolor ullamcorper condimentum. </p>
-			    		<div class="img-wrap"><img src="images/review-ava.jpg" alt=""></div>
+			    		<div class="img-wrap"></div>
 			    		<div class="name">Leona Richards</div>
 			    		<div class="date">1 year ago</div>
 			    	</div>

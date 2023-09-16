@@ -6,7 +6,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <link rel="icon" type="image/png" href="images/favicon.png">
-<title>Title</title>
+<title>ksmpreanger</title>
 
 <!-- FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:300,400,700,800" rel="stylesheet">
@@ -141,7 +141,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5">
-					<div class="product-image"><img src="images/product-single-img.jpg" alt=""></div>
+					<div class="product-image"><img src="images/product-single-img.png" alt=""></div>
 				</div>
 				<div class="col-md-7">
 					<h3 class="name">Robusta</h3>
@@ -180,7 +180,7 @@
 					<div class="row">
 						<div class="col-md-3">
 							<div class="product-item">
-								<div class="img-wrap"><a href="#"><img src="images/prod-img.jpg" alt=""></a></div>
+								<div class="img-wrap"><a href="#"><img src="images/prod-img.png" alt=""></a></div>
 								<a href="#" class="name">100%  Arabica</a>
 								<div class="text">Professional espresso serie</div>
 								<div class="price">$19</div>
@@ -189,7 +189,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="product-item">
-								<div class="img-wrap"><a href="#"><img src="images/prod-img1.jpg" alt=""></a></div>
+								<div class="img-wrap"><a href="#"><img src="images/prod-img1.png" alt=""></a></div>
 								<a href="#" class="name">Espresso Premium</a>
 								<div class="text">Professional espresso serie</div>
 								<div class="price">$46</div>
@@ -198,7 +198,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="product-item">
-								<div class="img-wrap"><a href="#"><img src="images/prod-img.jpg" alt=""></a></div>
+								<div class="img-wrap"><a href="#"><img src="images/prod-img2.png" alt=""></a></div>
 								<a href="#" class="name">100%  Arabica</a>
 								<div class="text">Professional espresso serie</div>
 								<div class="price">$19</div>
@@ -207,7 +207,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="product-item">
-								<div class="img-wrap"><a href="#"><img src="images/prod-img1.jpg" alt=""></a></div>
+								<div class="img-wrap"><a href="#"><img src="images/prod-img3.png" alt=""></a></div>
 								<a href="#" class="name">Espresso Premium</a>
 								<div class="text">Professional espresso serie</div>
 								<div class="price">$46</div>
