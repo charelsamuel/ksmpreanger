@@ -15,13 +15,11 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', [NewsController::class, 'index'])->middleware(['auth']);
+Route::get('/', [homeController::class, 'home']);
 
 Route::get('/product', function () {
     return view('product.index');
 });
-
-Route::get('/home', [homeController::class, 'home']);
 
 Route::get('/about', [homeController::class, 'about']);
 
@@ -33,7 +31,9 @@ Route::get('/where', [homeController::class, 'where']);
 
 Route::get('/testimonials', [homeController::class, 'testimonials']);
 
-Route::get('/blog', [homeController::class, 'blog']);
+Route::get('/blogs', [homeController::class, 'blogs']);
+
+Route::get('/blog/{id}', [homeController::class, 'blog']);
 
 Route::get('/contacts', [homeController::class, 'contacts']);
 

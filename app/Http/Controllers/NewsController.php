@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Intervention\Image\Facades\Image;
 
 
 class NewsController extends Controller
@@ -37,7 +38,10 @@ class NewsController extends Controller
         $news->save();
 
         // Save Image;
-        $request->image->move('images/news', "{$news->id}.{$request->image->extension()}");
+        $image       = $request->file('image');
+        $image_resize = Image::make($image->getRealPath());
+        $image_resize->resize(1200, 800);
+        $image_resize->save(public_path('images/news/' . "{$news->id}.{$request->image->extension()}"));
 
         return redirect('/news/create')->with('success', 'Data created!');
     }

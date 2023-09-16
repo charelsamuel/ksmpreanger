@@ -13,11 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:300,400,700,800" rel="stylesheet">
 
   <!-- CSS FILES -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/zoomslider.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/zoomslider.css" rel="stylesheet" type="text/css" />
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -71,7 +71,7 @@
                 <li><a href="/where">where to buy</a></li>
                 <li><a href="/testimonials">Testimonials</a></li>
                 <li>
-                  <a href="/blog">blog</a>
+                  <a href="/blogs">blog</a>
                   <!-- <ul class="sub-menu">
                     <li><a href="blog-post.html">Single Blog</a></li>
                     <li><a href="typography.html">Typography</a></li>
@@ -289,39 +289,41 @@
   <!-- WHERE TO BUY -->
   <section class="where-buy">
     <div class="container">
-      <div class="col-md-12"><h2>Choose your market</h2></div>
+      <div class="col-md-12">
+        <h2>Choose your market</h2>
+      </div>
     </div>
-        <div class="container">	
-          <div class="row">
-            <div class="col-sm-3">
-              <!-- <div class="buy-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <!-- <div class="buy-item">
                 <div class="info">
                   <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i>481 Goodisson str. 60544 New York City - MisterCoffee</div>
                   <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</div>
                   <a href="mailto:orders@mistercoffee.us" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</a>
                 </div>
               </div> -->
-            </div>
-            <div class="col-sm-6">
-              <div class="buy-item">
-                <div class="info">
-                  <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i><strong>481 Goodisson str. 60544 New York City - MisterCoffee</strong></div>
-                  <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</div>
-                  <a href="mailto:orders@mistercoffee.us" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <!-- <div class="buy-item">
-                <div class="info">
-                  <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i>481 Goodisson str. 60544 New York City - MisterCoffee</div>
-                  <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</div>
-                  <a href="mailto:orders@mistercoffee.us" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</a>
-                </div>
-              </div> -->
+        </div>
+        <div class="col-sm-6">
+          <div class="buy-item">
+            <div class="info">
+              <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i><strong>481 Goodisson str. 60544 New York City - MisterCoffee</strong></div>
+              <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</div>
+              <a href="mailto:orders@mistercoffee.us" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</a>
             </div>
           </div>
         </div>
+        <div class="col-sm-3">
+          <!-- <div class="buy-item">
+                <div class="info">
+                  <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i>481 Goodisson str. 60544 New York City - MisterCoffee</div>
+                  <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</div>
+                  <a href="mailto:orders@mistercoffee.us" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</a>
+                </div>
+              </div> -->
+        </div>
+      </div>
+    </div>
   </section>
   <!-- WHERE TO BUY END -->
 
@@ -364,79 +366,27 @@
         <div class="col-md-12">
           <h2>Read our news</h2>
         </div>
+        @foreach ($news as $item)
         <div class="col-md-3">
           <div class="main-blog-item">
-            <div class="img-wrap"><a href="#"><img class="img-responsive" src="images/0.jpg" alt=""></a></div>
+            <div class="img-wrap"><a href="/blog/{{$item->id}}"><img class="img-responsive" src="/images/news/{{$item->id}}.{{$item->imageExtension}}" alt=""></a></div>
             <div class="info">
-              <a href="#" class="name">Where our coffee is grown</a>
-              <p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
+              <a href="/blog/{{$item->id}}" class="name">{{ $item->title }}</a>
+              <p class="text">{{ $item->preview }}</p>
             </div>
             <div class="item-info">
               <div class="left">
-                <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>January 2, 2017</div>
+                <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>{{ $item->created_at }}</div>
               </div>
-              <div class="right">
+              <!-- <div class="right">
                 <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>12</div>
                 <div class="comm"><i class="fa fa-commenting" aria-hidden="true"></i>3</div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="main-blog-item">
-            <div class="img-wrap"><a href="#"><img class="img-responsive" src="images/1.jpg" alt=""></a></div>
-            <div class="info">
-              <a href="#" class="name">What sort of coffee to choose for every day?</a>
-              <p class="text">Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
-            </div>
-            <div class="item-info">
-              <div class="left">
-                <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>March 18, 2017</div>
-              </div>
-              <div class="right">
-                <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>12</div>
-                <div class="comm"><i class="fa fa-commenting" aria-hidden="true"></i>3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="main-blog-item">
-            <div class="img-wrap"><a href="#"><img class="img-responsive" src="images/2.jpg" alt=""></a></div>
-            <div class="info">
-              <a href="#" class="name">Where our coffee is grown</a>
-              <p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
-            </div>
-            <div class="item-info">
-              <div class="left">
-                <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>January 2, 2017</div>
-              </div>
-              <div class="right">
-                <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>12</div>
-                <div class="comm"><i class="fa fa-commenting" aria-hidden="true"></i>3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="main-blog-item">
-            <div class="img-wrap"><a href="#"><img class="img-responsive" src="images/3.jpg" alt=""></a></div>
-            <div class="info">
-              <a href="#" class="name">What sort of coffee to choose for every day?</a>
-              <p class="text">Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
-            </div>
-            <div class="item-info">
-              <div class="left">
-                <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>January 2, 2017</div>
-              </div>
-              <div class="right">
-                <div class="like"><i class="fa fa-heart" aria-hidden="true"></i>12</div>
-                <div class="comm"><i class="fa fa-commenting" aria-hidden="true"></i>3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 text-center"><a href="#" class="btn btn-default all-blog">all news</a></div>
+        @endforeach
+        <div class="col-md-12 text-center"><a href="/blogs" class="btn btn-default all-blog">all news</a></div>
       </div>
     </div>
   </section>

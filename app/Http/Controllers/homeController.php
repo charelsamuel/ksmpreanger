@@ -12,7 +12,8 @@ class homeController extends Controller
 {
   public function home()
   {
-    $news = News::all();
+    $news = News::orderByDesc('id')
+      ->limit(4)->get();
     $products = Product::all();
     return view('home.home', ['news' => $news, 'products' => $products]);
   }
@@ -43,9 +44,15 @@ class homeController extends Controller
     return view('home.testimonials');
   }
 
-  public function blog()
+  public function blogs()
   {
-    $news = News::all();
+    $news = News::orderByDesc('id')->paginate(3);
+    return view('home.blogs', ['news' => $news]);
+  }
+
+  public function blog(Request $request, $id)
+  {
+    $news = News::find($id);
     return view('home.blog', ['news' => $news]);
   }
 

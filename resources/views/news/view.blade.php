@@ -30,7 +30,7 @@
           </tr>
           <tr>
             <th>Image</th>
-            <td><img src="/images/news/{{$news->id}}.png" class="img-fluid" alt="{{$news->id}}"></td>
+            <td><img src="/images/news/{{$news->id}}.{{$news->imageExtension}}" class="img-fluid" alt="{{$news->id}}"></td>
           </tr>
         </table>
       </div>
