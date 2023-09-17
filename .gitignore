@@ -2,6 +2,7 @@
 /public/hot
 /public/images/news
 /public/images/product
+/public/images/gallery
 /public/storage
 /storage/*.key
 /vendor
