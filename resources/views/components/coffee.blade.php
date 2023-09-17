@@ -56,13 +56,13 @@
             <nav class="navbar collapse navbar-collapse" id="coffee-menu">
               <div class="col-lg-10 col-md-10">
                 <ul class="main-menu nav">
-                  <li class="active"><a href="/home">Home</a></li>
+                  <li class="active"><a href="/">Home</a></li>
                   <li class="parent">
                     <a href="#">About</a>
                     <ul class="sub-menu">
                       <li><a href="/about">About us</a></li>
                       <li class="parent">
-                        <a href="/gallery">Gallery</a>
+                        <a href="/galleries">Gallery</a>
                         <!-- <ul class="third-level">
                         <li><a href="gallery-2.html">Gallery 2 columns</a></li>
                         <li><a href="gallery.html">Gallery 3 columns</a></li>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
@@ -23,7 +24,7 @@ Route::get('/product', function () {
 
 Route::get('/about', [homeController::class, 'about']);
 
-Route::get('/gallery', [homeController::class, 'gallery']);
+Route::get('/galleries', [homeController::class, 'gallery']);
 
 Route::get('/products', [homeController::class, 'products']);
 
@@ -50,6 +51,20 @@ Route::post('/news/update', [NewsController::class, 'update'])->middleware(['aut
 Route::post('/news/delete', [NewsController::class, 'delete'])->middleware(['auth']);
 
 Route::get('/news/{id}', [NewsController::class, 'view'])->middleware(['auth']);
+
+Route::get('/gallery', [GalleryController::class, 'index'])->middleware(['auth']);
+
+Route::get('/gallery/create', [GalleryController::class, 'create'])->middleware(['auth']);
+
+Route::post('/gallery/store', [GalleryController::class, 'store'])->middleware(['auth']);
+
+Route::get('/gallery/update-form/{id}', [GalleryController::class, 'updateForm'])->middleware(['auth']);
+
+Route::post('/gallery/update', [GalleryController::class, 'update'])->middleware(['auth']);
+
+Route::post('/gallery/delete', [GalleryController::class, 'delete'])->middleware(['auth']);
+
+Route::get('/gallery/{id}', [GalleryController::class, 'view'])->middleware(['auth']);
 
 Route::get('/product', [ProductController::class, 'index'])->middleware(['auth']);
 

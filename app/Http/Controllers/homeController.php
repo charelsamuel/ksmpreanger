@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use App\Models\News;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -25,7 +26,8 @@ class homeController extends Controller
 
   public function gallery()
   {
-    return view('home.gallery');
+    $galleries = Gallery::orderByDesc('id')->paginate(8);
+    return view('home.gallery', ['galleries' => $galleries]);
   }
 
   public function products()
