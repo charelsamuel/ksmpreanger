@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
@@ -74,4 +75,17 @@ Route::post('/product/delete', [ProductController::class, 'delete'])->middleware
 
 Route::get('/product/{id}', [ProductController::class, 'view'])->middleware(['auth']);
 
+Route::get('/testimonial', [TestimonialController::class, 'index'])->middleware(['auth']);
+
+Route::get('/testimonial/create', [TestimonialController::class, 'create'])->middleware(['auth']);
+
+Route::post('/testimonial/store', [TestimonialController::class, 'store'])->middleware(['auth']);
+
+Route::get('/testimonial/update-form/{id}', [TestimonialController::class, 'updateForm'])->middleware(['auth']);
+
+Route::post('/testimonial/update', [TestimonialController::class, 'update'])->middleware(['auth']);
+
+Route::post('/testimonial/delete', [TestimonialController::class, 'delete'])->middleware(['auth']);
+
+Route::get('/testimonial/{id}', [TestimonialController::class, 'view'])->middleware(['auth']);
 require __DIR__ . '/auth.php';

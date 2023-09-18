@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Gallery;
 use App\Models\News;
 use App\Models\Product;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -38,8 +39,10 @@ class HomeController extends Controller
 
   public function testimonials()
   {
-    return view('home.testimonials');
+      $testimonials = Testimonial::orderByDesc('id')->paginate(3);
+      return view('home.testimonials', ['testimonials' => $testimonials]);
   }
+
 
   public function blogs()
   {
