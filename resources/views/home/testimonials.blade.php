@@ -48,7 +48,7 @@
 			<div class="container">
 				<div class="row position-relative">
 					<div class="col-lg-2 col-md-2">
-						<a href="/home" class="small-logo alt"><img src="images/small-logo.png" alt=""></a>	
+						<a href="/home" class="small-logo alt"><img src="images/small-logo.png" alt=""></a>
 					</div>
 					<div class="col-lg-10 col-md-10">
 						<nav class="navbar collapse navbar-collapse" id="coffee-menu">
@@ -82,7 +82,7 @@
 									<li><a href="/where">where to buy</a></li>
 									<li class="active"><a href="/testimonials">Testimonials</a></li>
 									<li>
-										<a href="/blog">blog</a>
+										<a href="/blogs">blog</a>
 										<!-- <ul class="sub-menu">
 											<li><a href="blog-post.html">Single Blog</a></li>
 											<li><a href="typography.html">Typography</a></li>
@@ -127,7 +127,7 @@
 							<li><a href="/home">Home</a></li>
 							<li>Testimonials</li>
 						</ul>
-						<h1>Testimonials</h1>	
+						<h1>Testimonials</h1>
 					</div>
 				</div>
 			</div>
@@ -136,65 +136,36 @@
 
 	<!-- TESTIMONIALS -->
 	<section class="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>What our clients say</h2>
-				</div>
-				<div class="col-md-8 col-md-offset-2 testimonials-list">
-					<div class="review-item">
-						<div class="quote">			
-							<i class="fa fa-quote-left"></i>
-						</div>
-			    		<p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-			    		<div class="img-wrap"></div>
-			    		<div class="name">Leona Richards</div>
-			    		<div class="date">1 year ago</div>
-			    	</div>
-			    	<div class="review-item">
-						<div class="quote">			
-							<i class="fa fa-quote-left"></i>
-						</div>
-			    		<p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-			    		<div class="img-wrap"></div>
-			    		<div class="name">Leona Richards</div>
-			    		<div class="date">1 year ago</div>
-			    	</div>
-			    	<div class="review-item">
-						<div class="quote">			
-							<i class="fa fa-quote-left"></i>
-						</div>
-			    		<p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-			    		<div class="img-wrap"></div>
-			    		<div class="name">Leona Richards</div>
-			    		<div class="date">1 year ago</div>
-			    	</div>
-			    	<div class="review-item">
-						<div class="quote">			
-							<i class="fa fa-quote-left"></i>
-						</div>
-			    		<p class="text">Duis vel vestibulum ipsum. Mauris scelerisque, quam vitae scelerisque tempus, turpis est dapibus libero, sit amet euismod ante ante vitae ante. Praesent vitae aliquet leo, in sagittis leo. Fusce vel ullamcorper elit. Aliquam feugiat accumsan est, sit amet efficitur lacus ullamcorper nec. Nulla ultrices nunc id felis sodales molestie vel eget lorem. Morbi vel metus sem. Nulla facilisi. Integer vel elementum augue. Sed semper volutpat massa, eget tincidunt odio fringilla in. Maecenas porta finibus accumsan. Nam luctus semper purus. Mauris a metus et dolor ullamcorper condimentum. </p>
-			    		<div class="img-wrap"></div>
-			    		<div class="name">Leona Richards</div>
-			    		<div class="date">1 year ago</div>
-			    	</div>
-				</div>
-				<div class="col-md-12">
-					<div class="paging-navigation">
-					    <hr>
-					    <div class="pagination">
-					        <a href="#" class="prev disabled"><i class="fa fa-chevron-left" aria-hidden="true"></i> Prev</a>
-					        <a href="#" class="page-numbers current">1</a>
-					        <a href="#" class="page-numbers">2</a>
-					        <a href="#" class="page-numbers">3</a>
-					        <a href="#" class="page-numbers">4</a>
-					        <a href="#" class="next">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-					    </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>What our clients say</h2>
+                </div>
+                <div class="col-md-8 col-md-offset-2 testimonials-list">
+                    @foreach ($testimonials as $testimonial)
+                        <div class="review-item">
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                            <p class="text">{{ $testimonial->testi }}</p>
+                            <div class="img-wrap"></div>
+                            <div class="name">{{ $testimonial->name }}</div>
+                            <div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ $testimonial->created_at }}</div>
+                        </div>
+                    @endforeach
+                    <div class="col-md-12">
+                        <div class="paging-navigation">
+                            <hr>
+                            <div class="pagination">
+                                {{ $testimonials->links() }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 	<!-- TESTIMONIALS END -->
 
 	<!-- SUBSCRIBE FORM -->
@@ -214,11 +185,11 @@
 									<input type="text" placeholder="Enter Your Email">
 									<input type="submit" value="SUBMIT">
 								</form>
-							</div>	
+							</div>
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -253,7 +224,7 @@
 								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							</ul>	
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -274,7 +245,7 @@
 <!-- JAVASCRIPT FILES -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>	
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>
 <script type="text/javascript" src="js/map-style.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>

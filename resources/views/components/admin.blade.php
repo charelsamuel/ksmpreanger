@@ -65,6 +65,12 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/testimonial">
+          <i class="fas fa-fw fa-image"></i>
+          <span>Testimonials</span>
+        </a>
+      </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
