@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\homeController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProductController;
@@ -16,27 +16,21 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', [homeController::class, 'home']);
+Route::get('/', [HomeController::class, 'home']);
 
-Route::get('/product', function () {
-    return view('product.index');
-});
+Route::get('/products', [HomeController::class, 'products']);
 
-Route::get('/about', [homeController::class, 'about']);
+Route::get('/where', [HomeController::class, 'where']);
 
-Route::get('/galleries', [homeController::class, 'gallery']);
+Route::get('/testimonials', [HomeController::class, 'testimonials']);
 
-Route::get('/products', [homeController::class, 'products']);
+Route::get('/galleries', [HomeController::class, 'gallery']);
 
-Route::get('/where', [homeController::class, 'where']);
+Route::get('/blogs', [HomeController::class, 'blogs']);
 
-Route::get('/testimonials', [homeController::class, 'testimonials']);
+Route::get('/blog/{id}', [HomeController::class, 'blog']);
 
-Route::get('/blogs', [homeController::class, 'blogs']);
-
-Route::get('/blog/{id}', [homeController::class, 'blog']);
-
-Route::get('/contacts', [homeController::class, 'contacts']);
+Route::get('/contacts', [HomeController::class, 'contacts']);
 
 Route::get('/news', [NewsController::class, 'index'])->middleware(['auth']);
 

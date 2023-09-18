@@ -28,16 +28,17 @@
       <div class="row">
         <div class="col-md-10 col-sm-9">
           <ul class="top-bar-contacts">
-            <li><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</li>
-            <li class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</li>
-            <li class="skype"><i class="fa fa-skype" aria-hidden="true"></i>mrcoffee</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>+62 821 1526 5767</li>
+            <li class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>mekarwangi.coffee@gmail.com</li>
+            <li class="skype"><i class="fa fa-instagram" aria-hidden="true"></i>mekarwangi.coffee</li>
+            <li class="skype"><i class="fa fa-facebook" aria-hidden="true"></i>Mekar Wangi Coffee</li>
           </ul>
         </div>
         <div class="col-md-2 col-sm-3 top-social-wrap">
           <ul class="top-social">
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> -->
           </ul>
         </div>
       </div>
@@ -56,35 +57,12 @@
             <nav class="navbar collapse navbar-collapse" id="coffee-menu">
               <div class="col-lg-10 col-md-10">
                 <ul class="main-menu nav">
-                  <li class="active"><a href="/">Home</a></li>
-                  <li class="parent">
-                    <a href="#">About</a>
-                    <ul class="sub-menu">
-                      <li><a href="/about">About us</a></li>
-                      <li class="parent">
-                        <a href="/galleries">Gallery</a>
-                        <!-- <ul class="third-level">
-                        <li><a href="gallery-2.html">Gallery 2 columns</a></li>
-                        <li><a href="gallery.html">Gallery 3 columns</a></li>
-                        <li><a href="gallery-4.html">Gallery 4 columns</a></li>
-                      </ul> -->
-                      </li>
-                      <!-- <li><a href="coming-soon-full.html">Maintance Mode</a></li>
-                    <li><a href="404.html">Error Page</a></li> -->
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="/products">products</a>
-                  </li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/products">products</a></li>
                   <li><a href="/where">where to buy</a></li>
                   <li><a href="/testimonials">Testimonials</a></li>
-                  <li>
-                    <a href="/blogs">blog</a>
-                    <!-- <ul class="sub-menu">
-                    <li><a href="blog-post.html">Single Blog</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                  </ul> -->
-                  </li>
+                  <li><a href="/galleries">Gallery</a></li>
+                  <li><a href="/blogs">blog</a></li>
                   <li><a href="/contacts">Contacts</a></li>
                 </ul>
               </div>
@@ -118,7 +96,7 @@
   {{ $slot }}
 
   <!-- SUBSCRIBE FORM -->
-  <section class="subscribe">
+  <!-- <section class="subscribe">
     <div class="container ">
       <div class="row">
         <div class="col-md-12">
@@ -137,11 +115,9 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
-  </section>
-
+  </section> -->
   <!-- SUBSCRIBE FORM END -->
 
   <!-- FOOTER -->
@@ -160,18 +136,20 @@
           </div>
           <div class="col-md-3 col-sm-6">
             <ul class="footer-contacts">
-              <li><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</li>
-              <li><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</li>
-              <li><i class="fa fa-skype" aria-hidden="true"></i>mrcoffee</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>+62 821 1526 5767</li>
+              <li><i class="fa fa-envelope-o" aria-hidden="true"></i>mekarwangi.coffee@gmail.com</li>
+              <li><i class="fa fa-instagram" aria-hidden="true"></i>mekarwangi.coffee</li>
+              <li><i class="fa fa-facebook" aria-hidden="true"></i>Mekar Wangi Coffee</li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="footer-social">
               <div class="title">Follow Us</div>
               <ul class="social">
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+                <li><a href="https://wa.me/082115265767" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a href="https://instagram.com/mekarwangi.coffee" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/mekar.coffee" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>
@@ -182,7 +160,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <div class="copyrights"><a href="#">ksmpreanger</a> 2023 &copy; All Rights reserved <a href="#">Terms of Use</a></div>
+            <div class="copyrights"><a href="/">ksmpreanger</a> 2023 &copy; All Rights reserved</div>
           </div>
         </div>
       </div>
@@ -193,7 +171,7 @@
   <!-- JAVASCRIPT FILES -->
   <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>
   <script type="text/javascript" src="{{ asset('js/map-style.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>

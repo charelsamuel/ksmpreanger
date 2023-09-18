@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
 
-class homeController extends Controller
+class HomeController extends Controller
 {
   public function home()
   {
@@ -19,26 +19,21 @@ class homeController extends Controller
     return view('home.home', ['news' => $news, 'products' => $products]);
   }
 
-  public function about()
+  public function products()
   {
-    return view('home.about');
+    $products = Product::all();
+    return view('home.products', ['products' => $products]);
+  }
+
+  public function where()
+  {
+    return view('home.where');
   }
 
   public function gallery()
   {
     $galleries = Gallery::orderByDesc('id')->paginate(8);
     return view('home.gallery', ['galleries' => $galleries]);
-  }
-
-  public function products()
-  {
-    $products = Product::all();
-    return view('home.product', ['products' => $products]);
-  }
-
-  public function where()
-  {
-    return view('home.where');
   }
 
   public function testimonials()

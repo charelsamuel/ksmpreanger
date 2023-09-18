@@ -5,10 +5,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="top-title"><span>Worldwide</span> network</div>
+            <div class="top-title"><span>Java</span> Preanger</div>
             <div class="big-title">Mekarwangi Coffee</div>
             <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget<br> magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
-            <a href="#" class="btn btn-default">READ MORE</a>
+            <!-- <a href="#" class="btn btn-default">READ MORE</a> -->
           </div>
         </div>
       </div>
@@ -24,19 +24,19 @@
           <div class="col-md-4">
             <div class="item first">
               <img src="images/main_icon1.png" width="150" height="150" alt="">
-              <div class="name dark"><span>Natural</span> Coffee</div>
+              <div class="name dark"><span>Arabica</span> Coffee</div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="item second">
               <img src="images/main_icon2.png" width="150" height="150" alt="">
-              <div class="name"><span>Chinese</span> Tea</div>
+              <div class="name"><span>Natural</span> Proccess</div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="item third">
               <img src="images/main_icon3.png" width="150" height="150" alt="">
-              <div class="name"><span>Sweet</span> Desserts</div>
+              <div class="name"><span>Honey</span> Proccess</div>
             </div>
           </div>
         </div>
@@ -51,20 +51,20 @@
       <div class="row">
         <div class="col-md-6">
           <div class="about-text">
-            <h2>About <span>Market</span></h2>
+            <h2>About <span>Our Product</span></h2>
             <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
             <ul class="about-slogan">
               <li>
-                <div class="icon"><i class="fa fa-coffee" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-leaf" aria-hidden="true"></i></div>
                 <div class="text">
                   <div class="title">100% Natural Coffee</div>
                   <p>Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
                 </div>
               </li>
               <li>
-                <div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                <div class="icon"><i class="fa fa-coffee" aria-hidden="true"></i></div>
                 <div class="text">
-                  <div class="title">Free Delivery</div>
+                  <div class="title">Pure Arabica</div>
                   <p>Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
                 </div>
               </li>
@@ -91,36 +91,36 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2><span>Why people</span> choose mr.Coffee</h2>
+          <h2><span>Why people</span> choose Mekarwangi Coffee</h2>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="item">
             <div class="count">46</div>
             <div class="title">Coffee Markets</div>
             <p class="text">Sed sagittis sodales lobortis.<br> Curabitur in eleifend turpis, id vehicula odio. </p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="item">
-            <div class="count">19</div>
-            <div class="title">Varieties of coffee</div>
-            <p class="text">Sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
+            <div class="count">3</div>
+            <div class="title">Varieties of Coffee</div>
+            <p class="text">Sigararutang, S795, Mixed </p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="item">
-            <div class="count">22</div>
-            <div class="title">Varieties of tea</div>
-            <p class="text">Sed sagittis sodales lobortis.<br> Curabitur in eleifend turpis, id vehicula odio. </p>
+            <div class="count">3</div>
+            <div class="title">Varieties of Proccess</div>
+            <p class="text">Washed, Honey, Natural</p>
           </div>
         </div>
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
           <div class="item">
             <div class="count">83</div>
             <div class="title">Types of sweets</div>
             <p class="text">Sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -205,9 +205,9 @@
         <div class="col-sm-6">
           <div class="buy-item">
             <div class="info">
-              <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i><strong>481 Goodisson str. 60544 New York City - MisterCoffee</strong></div>
-              <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+80 (041) 2824 504 43</div>
-              <a href="mailto:orders@mistercoffee.us" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>orders@mistercoffee.us</a>
+              <div class="phone"><i class="fa fa-map-marker" aria-hidden="true"></i><strong>Desa Mekarwangi, Kecamatan Sindang Kerta, Kabupaten Bandung Barat</strong></div>
+              <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+62 821 1526 5767</div>
+              <a href="mailto:mekarwangi.coffee@gmail.com" class="mail"><i class="fa fa-envelope-o" aria-hidden="true"></i>mekarwangi.coffee@gmail.com</a>
             </div>
           </div>
         </div>
