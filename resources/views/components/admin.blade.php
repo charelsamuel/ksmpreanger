@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <title>ksmpreanger</title>
 
@@ -34,9 +35,9 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <!-- <i class="fas fa-laugh-wink"></i> -->
         </div>
-        <div class="sidebar-brand-text mx-3">Admin</div>
+        <div class="sidebar-brand-text mx-3">KSMPREANGER Admin</div>
       </a>
 
       <!-- Divider -->
@@ -53,7 +54,7 @@
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="/product">
-          <i class="fas fa-fw fa-image"></i>
+          <i class="fas fa-fw fa-coffee"></i>
           <span>Product</span>
         </a>
       </li>
@@ -67,8 +68,8 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="/testimonial">
-          <i class="fas fa-fw fa-image"></i>
-          <span>Testimonials</span>
+          <i class="fas fa-fw fa-quote-left"></i>
+          <span>Testimonial</span>
         </a>
       </li>
       <!-- Divider -->
@@ -280,17 +281,12 @@
         <div class="container-fluid">
           {{ $slot }}
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>Copyright &copy; Your Website 2021</span>
+              <span>Copyright &copy; kmspreanger 2023</span>
             </div>
           </div>
         </footer>
