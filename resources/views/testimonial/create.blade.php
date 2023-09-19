@@ -25,7 +25,7 @@
     </div>
     <div class="form-group">
       <label for="testi">Testimonials</label>
-      <input type="text" class="form-control" id="testi" placeholder="Testimonials" name="testi">
+      <textarea class="form-control" id="testi" rows="3" name="testi"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>

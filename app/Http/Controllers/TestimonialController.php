@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Testimonial;
 use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
@@ -38,7 +39,7 @@ class TestimonialController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
-            'testi' => 'required|max:255'
+            'testi' => 'required'
         ]);
 
         $testimonial = new Testimonial();

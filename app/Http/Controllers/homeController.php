@@ -17,7 +17,8 @@ class HomeController extends Controller
     $news = News::orderByDesc('id')
       ->limit(4)->get();
     $products = Product::all();
-    return view('home.home', ['news' => $news, 'products' => $products]);
+    $testimonials = Testimonial::all();
+    return view('home.home', ['news' => $news, 'products' => $products, 'testimonials' => $testimonials]);
   }
 
   public function products()
@@ -39,8 +40,8 @@ class HomeController extends Controller
 
   public function testimonials()
   {
-      $testimonials = Testimonial::orderByDesc('id')->paginate(3);
-      return view('home.testimonials', ['testimonials' => $testimonials]);
+    $testimonials = Testimonial::orderByDesc('id')->paginate(3);
+    return view('home.testimonials', ['testimonials' => $testimonials]);
   }
 
 

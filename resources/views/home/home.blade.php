@@ -234,22 +234,16 @@
         </div>
         <div class="col-md-12">
           <div class="owl-carousel review-slider owl-theme">
+            @foreach ($testimonials as $testimonial)
             <div class="item">
               <div class="review-item">
-                <p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget<br> magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis<br> sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
+                <p class="text">{{ $testimonial->testi }}</p>
                 <div class="img-wrap"></div>
-                <div class="name">Leona Richards</div>
-                <div class="date">1 year ago</div>
+                <div class="name">{{ $testimonial->name }}</div>
+                <div class="date">{{ $testimonial->created_at }}</div>
               </div>
             </div>
-            <div class="item">
-              <div class="review-item">
-                <p class="text">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget<br> magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. Sed sagittis<br> sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. </p>
-                <div class="img-wrap"></div>
-                <div class="name">Leona Richards</div>
-                <div class="date">1 year ago</div>
-              </div>
-            </div>
+            @endforeach
           </div>
         </div>
       </div>
