@@ -131,7 +131,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="footer-about">
               <div class="title">About Mekarwangi Coffee</div>
-              <p>Sed sagittis sodales lobortis. Curabitur in eleifend<br> turpis, id vehicula odio. Donec pulvinar tellus<br> eget magna aliquet ultricies. </p>
+              <p>Mekarwangi Coffee adalah merek kopi yang menghadirkan keindahan rasa kopi dalam setiap cangkir. <br> Kami berasal dari Indonesia, sebuah negara dengan kekayaan alam yang luar biasa, terutama dalam hal produksi kopi berkualitas tinggi. </p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
