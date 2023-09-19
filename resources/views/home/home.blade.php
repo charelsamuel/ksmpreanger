@@ -7,7 +7,7 @@
           <div class="col-md-12">
             <div class="top-title"><span>Java</span> Preanger</div>
             <div class="big-title">Mekarwangi Coffee</div>
-            <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget<br> magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
+            <p>Mekarwangi Coffee adalah manifestasi keunggulan dalam dunia kopi. Dipilih dengan cermat dari biji kopi terbaik, setiap cangkir Mekarwangi Coffee menghadirkan pengalaman kopi yang tak tertandingi. Biji kopi ini tumbuh dengan penuh dedikasi di dataran tinggi yang cocok, menciptakan rasa yang begitu istimewa.</p>
             <!-- <a href="#" class="btn btn-default">READ MORE</a> -->
           </div>
         </div>
@@ -52,27 +52,27 @@
         <div class="col-md-6">
           <div class="about-text">
             <h2>About <span>Our Product</span></h2>
-            <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
+            <p>Dengan Mekarwangi Coffee, kami berkomitmen untuk menjaga kualitas dan kesempurnaan dalam setiap cangkir.</p>
             <ul class="about-slogan">
               <li>
                 <div class="icon"><i class="fa fa-leaf" aria-hidden="true"></i></div>
                 <div class="text">
                   <div class="title">100% Natural Coffee</div>
-                  <p>Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
+                  <p>kopi yang diproduksi sepenuhnya dengan mengutamakan bahan-bahan alami dan tanpa bahan tambahan kimia. Dalam setiap cangkirnya, Anda akan menikmati keaslian cita rasa kopi yang murni dan kualitas biji kopi yang terbaik, tanpa campuran atau pengawet buatan. </p>
                 </div>
               </li>
               <li>
                 <div class="icon"><i class="fa fa-coffee" aria-hidden="true"></i></div>
                 <div class="text">
                   <div class="title">Pure Arabica</div>
-                  <p>Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
+                  <p>Pure Arabica Coffee adalah kopi murni yang berasal dari varietas kopi Arabika, yang dikenal dengan kualitasnya yang tinggi dan rasa yang istimewa. Biji kopi Arabika ditanam dengan cermat di dataran tinggi yang tepat, yang menciptakan karakteristik rasa yang unik. </p>
                 </div>
               </li>
               <li>
                 <div class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
                 <div class="text">
                   <div class="title">High Quality Product</div>
-                  <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
+                  <p>Produk ini dibuat dengan standar yang ketat dan menggunakan bahan-bahan terbaik, menjadikannya pilihan utama bagi mereka yang menginginkan yang terbaik. Keunggulan high-quality product terletak dalam rasa, kinerja, daya tahan, dan kualitas keseluruhan yang tidak dapat disaingi.</p>
                 </div>
               </li>
             </ul>
@@ -95,16 +95,16 @@
         </div>
         <div class="col-md-4">
           <div class="item">
-            <div class="count">46</div>
-            <div class="title">Coffee Markets</div>
-            <p class="text">Sed sagittis sodales lobortis.<br> Curabitur in eleifend turpis, id vehicula odio. </p>
+            <div class="count">20</div>
+            <div class="title">Local and International Markets</div>
+            <p class="text">Mekarwangi Coffee telah berhasil mengukir jejaknya di pasar lokal dengan menawarkan kopi berkualitas tinggi yang sangat disukai oleh masyarakat setempat.<br>  dan kini semakin mengukuhkan kehadiran mereka di pasar internasional dengan mengeksport kualitas unggulan ini ke berbagai penjuru dunia.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="item">
             <div class="count">3</div>
             <div class="title">Varieties of Coffee</div>
-            <p class="text">Sigararutang, S795, Mixed </p>
+            <p class="text">Arabica, Green Bean, Mixed </p>
           </div>
         </div>
         <div class="col-md-4">
