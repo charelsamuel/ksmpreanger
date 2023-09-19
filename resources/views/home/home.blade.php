@@ -135,48 +135,16 @@
         </div>
         <div class="col-md-12">
           <div class="row owl-carousel shop-slider">
+
+            @foreach ($products as $product)
             <div class="item">
-              <div class="img-wrap"><a href="#"><img src="images/prod-img.png" alt=""></a></div>
-              <a href="#" class="name">100% Arabica</a>
-              <div class="text">Professional espresso serie</div>
-              <div class="price">$19</div>
-              <!-- <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>add to cart</a> -->
+              <div class="img-wrap"><a href="/product/{{$product->id}}"><img src="/images/product/{{$product->id}}_preview.{{$product->imageExtension}}" alt=""></a></div>
+              <a href="/product/{{$product->id}}" class="name">{{ $product->name }}</a>
+              <div class="text">{{ $product->description }}</div>
+              <div class="price">Rp. @money($product->price)</div>
+              <a href="{{ $product->link }}" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Buy</a>
             </div>
-            <div class="item">
-              <div class="img-wrap"><a href="#"><img src="images/prod-img1.png" alt=""></a></div>
-              <a href="#" class="name">Espresso Premium</a>
-              <div class="text">Professional espresso serie</div>
-              <div class="price">$46</div>
-              <!-- <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>add to cart</a> -->
-            </div>
-            <div class="item">
-              <div class="img-wrap"><a href="#"><img src="images/prod-img2.png" alt=""></a></div>
-              <a href="#" class="name">100% Arabica</a>
-              <div class="text">Professional espresso serie</div>
-              <div class="price">$8</div>
-              <!-- <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>add to cart</a> -->
-            </div>
-            <div class="item">
-              <div class="img-wrap"><a href="#"><img src="images/prod-img3.png" alt=""></a></div>
-              <a href="#" class="name">Robusta</a>
-              <div class="text">Professional espresso serie</div>
-              <div class="price">$23</div>
-              <!-- <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>add to cart</a> -->
-            </div>
-            <div class="item">
-              <div class="img-wrap"><a href="#"><img src="images/prod-img2.jpg" alt=""></a></div>
-              <a href="#" class="name">100% Arabica</a>
-              <div class="text">Professional espresso serie</div>
-              <div class="price">$8</div>
-              <!-- <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>add to cart</a> -->
-            </div>
-            <div class="item">
-              <div class="img-wrap"><a href="#"><img src="images/prod-img3.jpg" alt=""></a></div>
-              <a href="#" class="name">Robusta</a>
-              <div class="text">Professional espresso serie</div>
-              <div class="price">$23</div>
-              <!-- <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart" aria-hidden="true"></i>add to cart</a> -->
-            </div>
+            @endforeach
           </div>
         </div>
       </div>

@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Intervention\Image\Facades\Image;
 
 class ProductController extends Controller
 {
@@ -54,10 +56,16 @@ class ProductController extends Controller
         $product->save();
 
         // Simpan img_preview
-        $request->img_preview->move('images/product', "{$product->id}_preview.{$request->img_preview->extension()}");
+        $image       = $request->file('img_preview');
+        $image_resize = Image::make($image->getRealPath());
+        $image_resize->resize(170, 170);
+        $image_resize->save(public_path('images/product/' . "{$product->id}_preview.{$request->img_preview->extension()}"));
 
         // Simpan img_content
-        $request->img_content->move('images/product', "{$product->id}_content.{$request->img_content->extension()}");
+        $image       = $request->file('img_content');
+        $image_resize = Image::make($image->getRealPath());
+        $image_resize->resize(400, 400);
+        $image_resize->save(public_path('images/product/' . "{$product->id}_content.{$request->img_content->extension()}"));
 
         return redirect('/product/create')->with('success', 'Data created!');
     }
@@ -70,7 +78,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     public function view(Request $request, $id)
+    public function view(Request $request, $id)
     {
         $product = Product::find($id);
         return view('product.view', ['product' => $product]);

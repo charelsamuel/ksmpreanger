@@ -23,7 +23,7 @@ class HomeController extends Controller
 
   public function products()
   {
-    $products = Product::all();
+    $products = Product::paginate(6);
     return view('home.products', ['products' => $products]);
   }
 
