@@ -47,7 +47,7 @@ class TestimonialController extends Controller
         $testimonial->testi = $request->input('testi');
         $testimonial->save();
 
-        return redirect('/testimonial/create')->with('success', 'Data created!');
+        return redirect('/admin/testimonial/create')->with('success', 'Data created!');
     }
 
     /**
@@ -94,7 +94,7 @@ class TestimonialController extends Controller
         $testimonial->testi = $request->input('testi');
         $testimonial->save();
 
-        return redirect("/testimonial/update-form/{$testimonial->id}")->with('success', 'Data updated!');
+        return redirect("/admin/testimonial/update-form/{$testimonial->id}")->with('success', 'Data updated!');
     }
 
     /**

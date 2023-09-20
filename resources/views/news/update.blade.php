@@ -4,7 +4,7 @@
     <h1 class="h3 mb-0 text-gray-800">Update News: {{$news->id}}</h1>
   </div>
 
-  <a href="/news" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
+  <a href="/admin/news" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
 
   @if ($errors->any())
   <div class="alert alert-danger">
@@ -18,7 +18,7 @@
   </div>
   @endif
 
-  <form action="/news/update" method="POST" enctype="multipart/form-data">
+  <form action="/admin/news/update" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
       <input type="hidden" name="id" value="{{$news->id}}">

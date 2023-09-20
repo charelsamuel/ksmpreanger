@@ -4,8 +4,8 @@
     <h1 class="h3 mb-0 text-gray-800">Gallery: {{ $gallery->id }}</h1>
   </div>
 
-  <a href="/gallery" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
-  <a href="/gallery/update-form/{{$gallery->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
+  <a href="/admin/gallery" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
+  <a href="/admin/gallery/update-form/{{$gallery->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
   <a href="#" class="btn btn-danger mb-3" id="delete"><i class="fas fa-plus"> Delete</i></a>
 
   <div class="card shadow mb-4">
@@ -36,13 +36,13 @@
       var id = $('#gallery-id').text();
 
       if (confirm('Are you sure want to delete?')) {
-        $.post("/gallery/delete", {
+        $.post("/admin/gallery/delete", {
             id: id,
             _token: "{{ csrf_token() }}"
           })
           .done(function(data) {
             alert("Data deleted");
-            location.replace('/gallery')
+            location.replace('/admin/gallery')
           });
       }
     });

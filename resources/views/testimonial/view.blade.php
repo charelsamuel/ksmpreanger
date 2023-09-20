@@ -4,8 +4,8 @@
     <h1 class="h3 mb-0 text-gray-800">Testimonial: {{ $testimonial->id }}</h1>
   </div>
 
-  <a href="/testimonial" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
-  <a href="/testimonial/update-form/{{$testimonial->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
+  <a href="/admin/testimonial" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
+  <a href="/admin/testimonial/update-form/{{$testimonial->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
   <a href="#" class="btn btn-danger mb-3" id="delete"><i class="fas fa-plus"> Delete</i></a>
 
   <div class="card shadow mb-4">
@@ -36,13 +36,13 @@
       var id = $('#testimonial-id').text();
 
       if (confirm('Are you sure want to delete?')) {
-        $.post("/testimonial/delete", {
+        $.post("/admin/testimonial/delete", {
             id: id,
             _token: "{{ csrf_token() }}"
           })
           .done(function(data) {
             alert("Data deleted");
-            location.replace('/testimonial')
+            location.replace('/admin/testimonial')
           });
       }
     });

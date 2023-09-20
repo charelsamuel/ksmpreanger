@@ -67,7 +67,7 @@ class ProductController extends Controller
         $image_resize->resize(400, 400);
         $image_resize->save(public_path('images/product/' . "{$product->id}_content.{$request->img_content->extension()}"));
 
-        return redirect('/product/create')->with('success', 'Data created!');
+        return redirect('/admin/product/create')->with('success', 'Data created!');
     }
 
 
@@ -115,7 +115,7 @@ class ProductController extends Controller
         // Simpan img_content
         $request->img_content->move('images/product', "{$product->id}_content.{$request->img_content->extension()}");
 
-        return redirect("/product/update-form/{$product->id}")->with('success', 'Data updated!');
+        return redirect("/admin/product/update-form/{$product->id}")->with('success', 'Data updated!');
     }
 
     public function delete(Request $request)

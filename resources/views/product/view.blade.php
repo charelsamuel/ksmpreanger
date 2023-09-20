@@ -4,8 +4,8 @@
     <h1 class="h3 mb-0 text-gray-800">product: {{ $product->id }}</h1>
   </div>
 
-  <a href="/product" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
-  <a href="/product/update-form/{{$product->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
+  <a href="/admin/product" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
+  <a href="/admin/product/update-form/{{$product->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
   <a href="#" class="btn btn-danger mb-3" id="delete"><i class="fas fa-plus"> Delete</i></a>
 
   <div class="card shadow mb-4">
@@ -52,13 +52,13 @@
       var id = $('#product-id').text();
 
       if (confirm('Are you sure want to delete?')) {
-        $.post("/product/delete", {
+        $.post("/admin/product/delete", {
             id: id,
             _token: "{{ csrf_token() }}"
           })
           .done(function(data) {
             alert("Data deleted");
-            location.replace('/product')
+            location.replace('/admin/product')
           });
       }
     });

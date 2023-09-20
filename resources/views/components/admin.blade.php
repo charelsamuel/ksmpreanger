@@ -45,7 +45,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/news">
+        <a class="nav-link collapsed" href="/admin/news">
           <i class="fas fa-fw fa-newspaper"></i>
           <span>News</span>
         </a>
@@ -53,21 +53,21 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/product">
+        <a class="nav-link collapsed" href="/admin/product">
           <i class="fas fa-fw fa-coffee"></i>
           <span>Product</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/gallery">
+        <a class="nav-link collapsed" href="/admin/gallery">
           <i class="fas fa-fw fa-image"></i>
           <span>Gallery</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="/testimonial">
+        <a class="nav-link collapsed" href="/admin/testimonial">
           <i class="fas fa-fw fa-quote-left"></i>
           <span>Testimonial</span>
         </a>
@@ -281,7 +281,7 @@
         <div class="container-fluid">
           {{ $slot }}
         </div>
-        
+
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">

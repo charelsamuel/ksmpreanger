@@ -97,7 +97,7 @@
           <div class="item">
             <div class="count">20</div>
             <div class="title">Local and International Markets</div>
-            <p class="text">Mekarwangi Coffee telah berhasil mengukir jejaknya di pasar lokal dengan menawarkan kopi berkualitas tinggi yang sangat disukai oleh masyarakat setempat.<br>  dan kini semakin mengukuhkan kehadiran mereka di pasar internasional dengan mengeksport kualitas unggulan ini ke berbagai penjuru dunia.</p>
+            <p class="text">Mekarwangi Coffee telah berhasil mengukir jejaknya di pasar lokal dengan menawarkan kopi berkualitas tinggi yang sangat disukai oleh masyarakat setempat.<br> dan kini semakin mengukuhkan kehadiran mereka di pasar internasional dengan mengeksport kualitas unggulan ini ke berbagai penjuru dunia.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -156,7 +156,7 @@
   <section class="where-buy">
     <div class="container">
       <div class="col-md-12">
-        <h2>Choose your market</h2>
+        <h2>Our market</h2>
       </div>
     </div>
     <div class="container">

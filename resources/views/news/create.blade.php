@@ -4,7 +4,7 @@
     <h1 class="h3 mb-0 text-gray-800">Create News</h1>
   </div>
 
-  <a href="/news" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"> Back</i></a>
+  <a href="/admin/news" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"> Back</i></a>
   @if ($errors->any())
   <div class="alert alert-danger">
     Validation Error!
@@ -17,7 +17,7 @@
   </div>
   @endif
 
-  <form action="/news/store" method="POST" enctype="multipart/form-data">
+  <form action="/admin/news/store" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
       <label for="title">Title</label>

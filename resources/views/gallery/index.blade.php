@@ -4,7 +4,7 @@
     <h1 class="h3 mb-0 text-gray-800">Gallery</h1>
   </div>
 
-  <a href="/gallery/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
+  <a href="/admin/gallery/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -25,7 +25,7 @@
             <tr>
               <td>{{ $item->id }}</td>
               <td>{{ $item->title }}</td>
-              <td class="text-center"><a href="/gallery/{{$item->id}}"><i class="bi-eye"></i></a></td>
+              <td class="text-center"><a href="/admin/gallery/{{$item->id}}"><i class="bi-eye"></i></a></td>
             </tr>
             @endforeach
           </tbody>

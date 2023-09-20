@@ -4,7 +4,7 @@
     <h1 class="h3 mb-0 text-gray-800">Testimonial</h1>
   </div>
 
-  <a href="/testimonial/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
+  <a href="/admin/testimonial/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -27,7 +27,7 @@
               <td>{{ $testimonial->id }}</td>
               <td>{{ $testimonial->name }}</td>
               <td>{{ $testimonial->testi }}</td>
-              <td class="text-center"><a href="/testimonial/{{$testimonial->id}}"><i class="bi-eye"></i></a></td>
+              <td class="text-center"><a href="/admin/testimonial/{{$testimonial->id}}"><i class="bi-eye"></i></a></td>
             </tr>
             @endforeach
           </tbody>

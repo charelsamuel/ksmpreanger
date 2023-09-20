@@ -4,7 +4,7 @@
     <h1 class="h3 mb-0 text-gray-800">News</h1>
   </div>
 
-  <a href="/news/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
+  <a href="/admin/news/create" class="btn btn-success mb-3"><i class="fas fa-plus"> Add</i></a>
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -27,7 +27,7 @@
               <td>{{ $item->id }}</td>
               <td>{{ $item->title }}</td>
               <td>{{ $item->preview }}</td>
-              <td class="text-center"><a href="/news/{{$item->id}}"><i class="bi-eye"></i></a></td>
+              <td class="text-center"><a href="/admin/news/{{$item->id}}"><i class="bi-eye"></i></a></td>
             </tr>
             @endforeach
           </tbody>

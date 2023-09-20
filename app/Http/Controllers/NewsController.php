@@ -43,7 +43,7 @@ class NewsController extends Controller
         $image_resize->resize(1200, 800);
         $image_resize->save(public_path('images/news/' . "{$news->id}.{$request->image->extension()}"));
 
-        return redirect('/news/create')->with('success', 'Data created!');
+        return redirect('/admin/news/create')->with('success', 'Data created!');
     }
 
     public function view(Request $request, $id)
@@ -78,7 +78,7 @@ class NewsController extends Controller
         // Save Image;
         $request->image->move('images/news', "{$news->id}.{$request->image->extension()}");
 
-        return redirect("/news/update-form/{$news->id}")->with('success', 'Data updated!');
+        return redirect("/admin/news/update-form/{$news->id}")->with('success', 'Data updated!');
     }
 
     public function delete(Request $request)

@@ -39,7 +39,7 @@ class GalleryController extends Controller
         $image_resize->resize(1200, 800);
         $image_resize->save(public_path('images/gallery/' . "{$gallery->id}.{$request->image->extension()}"));
 
-        return redirect('/gallery/create')->with('success', 'Data created!');
+        return redirect('/admin/gallery/create')->with('success', 'Data created!');
     }
 
     public function view(Request $request, $id)
@@ -69,7 +69,7 @@ class GalleryController extends Controller
         // Save Image;
         $request->image->move('images/gallery', "{$gallery->id}.{$request->image->extension()}");
 
-        return redirect("/gallery/update-form/{$gallery->id}")->with('success', 'Data updated!');
+        return redirect("/admin/gallery/update-form/{$gallery->id}")->with('success', 'Data updated!');
     }
 
     public function delete(Request $request)
