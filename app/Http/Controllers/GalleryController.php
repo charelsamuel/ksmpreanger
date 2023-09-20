@@ -34,11 +34,11 @@ class GalleryController extends Controller
         $gallery->save();
 
         // Save Image;
+
         $image       = $request->file('image');
         $image_resize = Image::make($image->getRealPath());
         $image_resize->resize(1200, 800);
         $image_resize->save(public_path('images/gallery/' . "{$gallery->id}.{$request->image->extension()}"));
-
         return redirect('/admin/gallery/create')->with('success', 'Data created!');
     }
 
@@ -63,11 +63,16 @@ class GalleryController extends Controller
 
         $gallery = Gallery::find($request->input('id'));
         $gallery->title = $request->input('title');
-        $gallery->imageExtension = $request->image->extension();
+
+        if ($request->hasFile('image')) {
+            $gallery->imageExtension = $request->image->extension();
+        }
         $gallery->save();
 
         // Save Image;
-        $request->image->move('images/gallery', "{$gallery->id}.{$request->image->extension()}");
+        if ($request->hasFile('image')) {
+            $request->image->move('images/gallery', "{$gallery->id}.{$request->image->extension()}");
+        }
 
         return redirect("/admin/gallery/update-form/{$gallery->id}")->with('success', 'Data updated!');
     }

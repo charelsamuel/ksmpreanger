@@ -7,7 +7,9 @@
   <a href="/admin/gallery" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"> Back</i></a>
   @if ($errors->any())
   <div class="alert alert-danger">
-    Validation Error!
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
   </div>
   @endif
 
@@ -21,7 +23,7 @@
     @csrf
     <div class="form-group">
       <label for="title">Title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+      <input type="text" class="form-control" id="title" placeholder="Title" value="{{ old('title') }}" name="title">
     </div>
     <div class="form-group">
       <label for="image">Image</label>

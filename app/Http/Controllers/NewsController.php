@@ -72,11 +72,15 @@ class NewsController extends Controller
         $news->title = $request->input('title');
         $news->preview = $request->input('preview');
         $news->content = $request->input('content');
-        $news->imageExtension = $request->image->extension();
+        if ($request->hasFile('image')) {
+            $news->imageExtension = $request->image->extension();
+        }
         $news->save();
 
         // Save Image;
-        $request->image->move('images/news', "{$news->id}.{$request->image->extension()}");
+        if ($request->hasFile('image')) {
+            $request->image->move('images/news', "{$news->id}.{$request->image->extension()}");
+        }
 
         return redirect("/admin/news/update-form/{$news->id}")->with('success', 'Data updated!');
     }

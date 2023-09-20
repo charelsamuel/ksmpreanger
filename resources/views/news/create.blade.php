@@ -7,7 +7,9 @@
   <a href="/admin/news" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"> Back</i></a>
   @if ($errors->any())
   <div class="alert alert-danger">
-    Validation Error!
+    @foreach ($errors->all() as $error)
+    <li>{{ $error }}</li>
+    @endforeach
   </div>
   @endif
 
@@ -21,15 +23,15 @@
     @csrf
     <div class="form-group">
       <label for="title">Title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+      <input type="text" class="form-control" id="title" placeholder="Title" value="{{ old('title') }}" name="title">
     </div>
     <div class="form-group">
       <label for="preview">Preview</label>
-      <input type="text" class="form-control" id="preview" placeholder="Preview" name="preview">
+      <input type="text" class="form-control" id="preview" placeholder="Preview" value="{{ old('preview') }}" name="preview">
     </div>
     <div class="form-group">
       <label for="content">Content</label>
-      <textarea class="form-control content" id="content" rows="3" name="content"></textarea>
+      <textarea class="form-control content" id="content" rows="3" name="content" value="{{ old('content') }}"></textarea>
     </div>
     <div class="form-group">
       <label for="image">Image</label>
