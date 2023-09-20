@@ -33,6 +33,10 @@
             <td>{!! $product->link !!}</td>
           </tr>
           <tr>
+            <th>Popular</th>
+            <td>{{ $product->isPopular }}</td>
+          </tr>
+          <tr>
             <th>Image Preview</th>
             <td><img src="/images/product/{{$product->id}}_preview.{{$product->imageExtension}}" class="img-fluid" alt="{{$product->id}}_preview"></td>
           </tr>

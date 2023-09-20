@@ -21,6 +21,7 @@
                             <th>Deskripsi</th>
                             <th>Harga</th>
                             <th>Link</th>
+                            <th>Popular</th>
                             <th>Image Preview</th>
                         </tr>
                     </thead>
@@ -32,6 +33,7 @@
                             <td>{{ $product->description }}</td>
                             <td>{{ $product->price }}</td>
                             <td>{{ $product->link }}</td>
+                            <td>{{ $product->isPopular }}</td>
                             <td class="text-center"><a href="/admin/product/{{$product->id}}"><i class="bi-eye"></i></a></td>
                         </tr>
                         @endforeach

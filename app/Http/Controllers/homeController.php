@@ -7,7 +7,6 @@ use App\Models\News;
 use App\Models\Product;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File;
 
 
 class HomeController extends Controller
@@ -16,7 +15,7 @@ class HomeController extends Controller
   {
     $news = News::orderByDesc('id')
       ->limit(4)->get();
-    $products = Product::all();
+    $products = Product::where('isPopular', 1)->get();
     $testimonials = Testimonial::all();
     return view('home.home', ['news' => $news, 'products' => $products, 'testimonials' => $testimonials]);
   }
@@ -55,6 +54,12 @@ class HomeController extends Controller
   {
     $news = News::find($id);
     return view('home.blog', ['news' => $news]);
+  }
+
+  public function product(Request $request, $id)
+  {
+    $product = Product::find($id);
+    return view('home.product', ['product' => $product]);
   }
 
   public function contacts()

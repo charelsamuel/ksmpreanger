@@ -7,7 +7,9 @@
 
     @if ($errors->any())
     <div class="alert alert-danger">
-        Validation Error!
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
     </div>
     @endif
 
@@ -21,27 +23,34 @@
         @csrf
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+            <input type="text" class="form-control" id="name" placeholder="Name" value="{{ old('name') }}" name="name">
         </div>
         <div class="form-group">
             <label for="description">Description</label>
-            <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+            <input type="text" class="form-control" id="description" placeholder="Description" value="{{ old('description') }}" name="description">
         </div>
         <div class="form-group">
             <label for="price">Price</label>
-            <input type="number" class="form-control" id="price" placeholder="Price" name="price">
+            <input type="number" class="form-control" id="price" placeholder="Price" value="{{ old('price') }}" name="price">
         </div>
         <div class="form-group">
             <label for="link">Link</label>
-            <input type="url" class="form-control" id="link" placeholder="Link" name="link">
+            <input type="url" class="form-control" id="link" placeholder="Link" value="{{ old('link') }}" name="link">
         </div>
         <div class="form-group">
-            <label for="img_preview">Image Preview</label>
-            <input type="file" class="form-control-file" id="img_preview" placeholder="Image Preview" name="img_preview">
+            <label for="price">Popular</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="isPopular" value="1" name="isPopular">
+                <label for="isPopular" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="isPopular" value="0" name="isPopular">
+                <label for="isPopular" class="form-check-label">No</label>
+            </div>
         </div>
         <div class="form-group">
-            <label for="img_content">Image Content</label>
-            <input type="file" class="form-control-file" id="img_content" placeholder="Image Content" name="img_content">
+            <label for="image">Image</label>
+            <input type="file" class="form-control-file" id="image" placeholder="Image" value="{{ old('image') }}" name="image">
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>

@@ -21,6 +21,8 @@ Route::get('/', [HomeController::class, 'home']);
 
 Route::get('/products', [HomeController::class, 'products']);
 
+Route::get('/product/{id}', [HomeController::class, 'product']);
+
 Route::get('/where', [HomeController::class, 'where']);
 
 Route::get('/testimonials', [HomeController::class, 'testimonials']);

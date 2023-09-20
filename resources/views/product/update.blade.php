@@ -3,7 +3,7 @@
         <h1 class="h3 mb-0 text-gray-800">Update product: {{$product->id}}</h1>
     </div>
 
-    <a href="/admin/product" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
+    <a href="/admin/product/{{$product->id}}" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
 
     @if ($errors->any())
     <div class="alert alert-danger">
@@ -39,12 +39,19 @@
             <input type="text" class="form-control" id="link" placeholder="Link Produk" name="link" value="{{$product->link}}">
         </div>
         <div class="form-group">
-            <label for="img_preview">Image Preview</label>
-            <input type="file" class="form-control-file" id="img_preview" name="img_preview">
+            <label for="price">Popular</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="isPopular" value="1" name="isPopular" @if ($product->isPopular) checked @endif>
+                <label for="isPopular" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="isPopular" value="0" name="isPopular" @if (!$product->isPopular) checked @endif>
+                <label for="isPopular" class="form-check-label">No</label>
+            </div>
         </div>
         <div class="form-group">
-            <label for="img_content">Image Content</label>
-            <input type="file" class="form-control-file" id="img_content" name="img_content">
+            <label for="image">Image</label>
+            <input type="file" class="form-control-file" id="image" placeholder="Image" name="image">
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>

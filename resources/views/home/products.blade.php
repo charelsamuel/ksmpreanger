@@ -26,10 +26,10 @@
 				<div class="col-md-4">
 					<div class="item">
 						<div class="img-wrap"><img src="/images/product/{{$product->id}}_preview.png" alt=""></div>
-						<div class="name"><span>{{ $product->name }}</div>
-						<div class="price">Rp. @money($product->price) </div>
+						<div class="name"><span><a href="/product/{{$product->id}}">{{ $product->name }}</a></div>
+						<div class=" price">Rp. @money($product->price) </div>
 						<p class="text">{{ $product->description }}</p>
-						<a href="/product/{{ $product->id }}" class="btn btn-default">READ MORE</a>
+						<a href="{{ $product->link }}" class="btn btn-default">BUY</a>
 					</div>
 				</div>
 				@endforeach

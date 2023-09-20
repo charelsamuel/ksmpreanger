@@ -43,8 +43,7 @@ class ProductController extends Controller
             'description' => 'required|max:255',
             'price' => 'required|numeric',
             'link' => 'required|url',
-            'img_preview' => 'required|image', // Validasi untuk img_preview
-            'img_content' => 'required|image', // Validasi untuk img_content
+            'image' => 'required|image'
         ]);
 
         $product = new Product();
@@ -52,20 +51,20 @@ class ProductController extends Controller
         $product->description = $request->input('description');
         $product->price = $request->input('price');
         $product->link = $request->input('link');
-        $product->imageExtension = $request->img_preview->extension();
+        $product->isPopular = $request->input('isPopular');
+        $product->imageExtension = $request->image->extension();
         $product->save();
 
         // Simpan img_preview
-        $image       = $request->file('img_preview');
-        $image_resize = Image::make($image->getRealPath());
-        $image_resize->resize(170, 170);
-        $image_resize->save(public_path('images/product/' . "{$product->id}_preview.{$request->img_preview->extension()}"));
+        $image = $request->file('image');
+        $image_preview = Image::make($image->getRealPath());
+        $image_preview->resize(170, 170);
+        $image_preview->save(public_path('images/product/' . "{$product->id}_preview.{$request->image->extension()}"));
 
         // Simpan img_content
-        $image       = $request->file('img_content');
-        $image_resize = Image::make($image->getRealPath());
-        $image_resize->resize(400, 400);
-        $image_resize->save(public_path('images/product/' . "{$product->id}_content.{$request->img_content->extension()}"));
+        $image_content = Image::make($image->getRealPath());
+        $image_content->resize(400, 400);
+        $image_content->save(public_path('images/product/' . "{$product->id}_content.{$request->image->extension()}"));
 
         return redirect('/admin/product/create')->with('success', 'Data created!');
     }
@@ -97,8 +96,7 @@ class ProductController extends Controller
             'description' => 'required|max:255',
             'price' => 'required|numeric',
             'link' => 'required|url',
-            'img_preview' => 'required', // Validasi untuk img_preview
-            'img_content' => 'required', // Validasi untuk img_content
+            'image' => 'nullable'
         ]);
 
         $product = Product::find($request->input('id'));
@@ -106,15 +104,24 @@ class ProductController extends Controller
         $product->description = $request->input('description');
         $product->price = $request->input('price');
         $product->link = $request->input('link');
-        $product->imageExtension = $request->img_preview->extension();
+        $product->isPopular = $request->input('isPopular');
+        if ($request->hasFile('image')) {
+            $product->imageExtension = $request->image->extension();
+        }
         $product->save();
 
-        // Save Image;
-        $request->img_preview->move('images/product', "{$product->id}_preview.{$request->img_preview->extension()}");
+        if ($request->hasFile('image')) {
+            // Simpan img_preview
+            $image = $request->file('image');
+            $image_preview = Image::make($image->getRealPath());
+            $image_preview->resize(170, 170);
+            $image_preview->save(public_path('images/product/' . "{$product->id}_preview.{$request->image->extension()}"));
 
-        // Simpan img_content
-        $request->img_content->move('images/product', "{$product->id}_content.{$request->img_content->extension()}");
-
+            // Simpan img_content
+            $image_content = Image::make($image->getRealPath());
+            $image_content->resize(400, 400);
+            $image_content->save(public_path('images/product/' . "{$product->id}_content.{$request->image->extension()}"));
+        }
         return redirect("/admin/product/update-form/{$product->id}")->with('success', 'Data updated!');
     }
 
