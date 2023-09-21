@@ -53,6 +53,6 @@
             <input type="file" class="form-control-file" id="image" placeholder="Image" value="{{ old('image') }}" name="image">
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary mb-3">Submit</button>
     </form>
 </x-admin>

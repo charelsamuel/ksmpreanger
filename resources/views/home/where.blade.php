@@ -63,7 +63,7 @@
 					<div class="icon"><i class="fa fa-leaf" aria-hidden="true"></i></div>
 					<div class="text">
 						<div class="title">100% Natural Coffee</div>
-						<p>Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
+						<p>Kopi yang diproduksi sepenuhnya dengan mengutamakan bahan-bahan alami dan tanpa bahan tambahan kimia. Dalam setiap cangkirnya, Anda akan menikmati keaslian cita rasa kopi yang murni dan kualitas biji kopi yang terbaik, tanpa campuran atau pengawet buatan. </p>
 					</div>
 				</div>
 			</div>
@@ -72,7 +72,7 @@
 					<div class="icon"><i class="fa fa-coffee" aria-hidden="true"></i></div>
 					<div class="text">
 						<div class="title">Pure Arabica</div>
-						<p>Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec eleifend sem convallis vitae. </p>
+						<p>Pure Arabica Coffee adalah kopi murni yang berasal dari varietas kopi Arabika, yang dikenal dengan kualitasnya yang tinggi dan rasa yang istimewa. Biji kopi Arabika ditanam dengan cermat di dataran tinggi yang tepat, yang menciptakan karakteristik rasa yang unik. </p>
 					</div>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 					<div class="icon"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
 					<div class="text">
 						<div class="title">High Quality Product</div>
-						<p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus eget magna aliquet ultricies. </p>
+						<p>Produk ini dibuat dengan standar yang ketat dan menggunakan bahan-bahan terbaik, menjadikannya pilihan utama bagi mereka yang menginginkan yang terbaik. Keunggulan high-quality product terletak dalam rasa, kinerja, daya tahan, dan kualitas keseluruhan yang tidak dapat disaingi.</p>
 					</div>
 				</div>
 			</div>

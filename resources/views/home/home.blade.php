@@ -58,7 +58,7 @@
                 <div class="icon"><i class="fa fa-leaf" aria-hidden="true"></i></div>
                 <div class="text">
                   <div class="title">100% Natural Coffee</div>
-                  <p>kopi yang diproduksi sepenuhnya dengan mengutamakan bahan-bahan alami dan tanpa bahan tambahan kimia. Dalam setiap cangkirnya, Anda akan menikmati keaslian cita rasa kopi yang murni dan kualitas biji kopi yang terbaik, tanpa campuran atau pengawet buatan. </p>
+                  <p>Kopi yang diproduksi sepenuhnya dengan mengutamakan bahan-bahan alami dan tanpa bahan tambahan kimia. Dalam setiap cangkirnya, Anda akan menikmati keaslian cita rasa kopi yang murni dan kualitas biji kopi yang terbaik, tanpa campuran atau pengawet buatan. </p>
                 </div>
               </li>
               <li>
