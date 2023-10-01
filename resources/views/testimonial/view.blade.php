@@ -4,9 +4,9 @@
     <h1 class="h3 mb-0 text-gray-800">Testimonial: {{ $testimonial->id }}</h1>
   </div>
 
-  <a href="/admin/testimonial" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
-  <a href="/admin/testimonial/update-form/{{$testimonial->id}}" class="btn btn-success mb-3"><i class="fas fa-plus"> Update</i></a>
-  <a href="#" class="btn btn-danger mb-3" id="delete"><i class="fas fa-plus"> Delete</i></a>
+  <a href="/admin/testimonial" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"> Back</i></a>
+  <a href="/admin/testimonial/update-form/{{$testimonial->id}}" class="btn btn-success mb-3"><i class="fas fa-edit"> Update</i></a>
+  <a href="#" class="btn btn-danger mb-3" id="delete"><i class="fas fa-trash"> Delete</i></a>
 
   <div class="card shadow mb-4">
     <div class="card-body">

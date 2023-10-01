@@ -4,7 +4,7 @@
     <h1 class="h3 mb-0 text-gray-800">Update News: {{$news->id}}</h1>
   </div>
 
-  <a href="/admin/news" class="btn btn-primary mb-3"><i class="fas fa-plus"> Back</i></a>
+  <a href="/admin/news" class="btn btn-primary mb-3"><i class="fas fa-arrow-left"> Back</i></a>
 
   @if ($errors->any())
   <div class="alert alert-danger">
@@ -42,6 +42,6 @@
       <input type="file" class="form-control-file" id="image" name="image">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary mb-3">Submit</button>
   </form>
 </x-admin>
