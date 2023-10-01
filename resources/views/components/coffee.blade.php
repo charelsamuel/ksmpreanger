@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="Mekarwangi Coffee provides the best coffee beans with natural and honey process" />
+  <meta name="keywords" content="coffee, beans, specialty coffee, arabica coffee, mekarwangi coffee" />
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <title>ksmpreanger</title>
+  <title>KSM Preanger Coffee</title>
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:300,400,700,800" rel="stylesheet">

@@ -6,9 +6,9 @@
 				<div class="col-md-12">
 					<ul class="breadcrumb">
 						<li><a href="/">Home</a></li>
-						<li>Products</li>
+						<li>Coffee Products</li>
 					</ul>
-					<h1>Products</h1>
+					<h1>Coffee Products</h1>
 				</div>
 			</div>
 		</div>

@@ -8,7 +8,7 @@
 						<li><a href="/">Home</a></li>
 						<li>Blog</li>
 					</ul>
-					<h1>Blog</h1>
+					<h1>Coffee Blog</h1>
 				</div>
 			</div>
 		</div>
